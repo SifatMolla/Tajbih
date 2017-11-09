@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tajbih" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T3e-CD-2tg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yrp-gZ-ltC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cxz-eD-QBf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n0t-kv-18e">
+                                                <rect key="frame" x="0.0" y="8" width="375" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCF-Vl-a0E">
+                                                        <rect key="frame" x="0.0" y="7" width="243" height="36"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.34796922759999999" blue="0.3447116248" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Chnage Background">
+                                                            <color key="titleColor" red="0.79991227389999997" green="0.80005055670000003" blue="0.79990351199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="ChangeBaground_TouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ONH-JV-NW2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltb-Pm-QPY">
+                                                        <rect key="frame" x="263" y="7" width="112" height="36"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.34796922763592097" blue="0.34471162479038486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="112" id="Cxs-Ug-ubg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Reset">
+                                                            <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Reset_tuchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5b-Pg-XuG"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="cWZ-qt-9vm"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0046123760656402533" green="0.47280290980024386" blue="0.46837643041355903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="n0t-kv-18e" firstAttribute="leading" secondItem="Cxz-eD-QBf" secondAttribute="leading" id="aP0-5m-zd0"/>
+                                            <constraint firstItem="n0t-kv-18e" firstAttribute="top" secondItem="Cxz-eD-QBf" secondAttribute="top" constant="8" id="aVt-w0-Eoi"/>
+                                            <constraint firstAttribute="height" constant="60" id="ey0-16-0gu"/>
+                                            <constraint firstAttribute="trailing" secondItem="n0t-kv-18e" secondAttribute="trailing" id="nMG-W8-JFc"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-Bk-1DT">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="674"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="91"/>
+                                        <state key="normal" title="0" backgroundImage="known">
+                                            <color key="titleColor" red="0.0066421874798834324" green="0.46376103162765503" blue="0.45703452825546265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="TajbihButton_TouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O26-YI-F3t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yrp-gZ-ltC" firstAttribute="trailing" secondItem="pxd-En-UWZ" secondAttribute="trailing" id="2t4-s7-paI"/>
+                            <constraint firstItem="pxd-En-UWZ" firstAttribute="bottom" secondItem="yrp-gZ-ltC" secondAttribute="bottom" id="Ef4-kd-yKc"/>
+                            <constraint firstItem="yrp-gZ-ltC" firstAttribute="leading" secondItem="pxd-En-UWZ" secondAttribute="leading" id="Ps6-AY-Ruc"/>
+                            <constraint firstItem="yrp-gZ-ltC" firstAttribute="top" secondItem="pxd-En-UWZ" secondAttribute="top" id="b7U-WI-ncC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pxd-En-UWZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tajbih" destination="Akz-Bk-1DT" id="qcZ-h6-GIZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.710144927536234" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="known" width="165" height="305"/>
+    </resources>
+</document>
